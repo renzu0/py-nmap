@@ -62,7 +62,7 @@ if __name__ == "__main__":
     sender = '@163.com'
     receiver = '@qq.com'
     smtpuser = '@163.com'
-    smtppass = 'a123456'
+    smtppass = ''
     mailcontent = '<br>'.join(results)
     msg = MIMEText(mailcontent,'html')
     msg['Subject'] = '服务器端口扫描'
