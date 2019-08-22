@@ -1,5 +1,0 @@
-export HISTORY_FILE=/var/log/usermonitor/usermonitor.log
-
-export PROMPT_COMMAND='{ date "+%Y-%m-%d %T ## `hostname` ## $(who am i |awk "{print \$1}") ## $(who am i |awk "{print \$2}") ## $realsourceip ## $(history 1 | { read x cmd; echo "$cmd"; })"; } >>$HISTORY_FILE'
-
-realsourceip=`who am i | awk -F"[()]" '{print $2}'`
